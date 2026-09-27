@@ -62,9 +62,8 @@ const int RIGHT_EN = 13, RIGHT_IN1 = 32, RIGHT_IN2 = 33;  // L298N motor B
 const int I2S_BCLK = 14, I2S_LRC = 15, I2S_DIN = 22;
 const int OLED_SDA = 21, OLED_SCL = 23;
 
-// Same values as in firmware/robo_car_wifi_test (motor A is wired reversed on
-// this car). With them the app's "forward" really drives forward.
-const bool INVERT_LEFT = true;
+// Motor directions: tested on this car, no motor needs inverting.
+const bool INVERT_LEFT = false;
 const bool INVERT_RIGHT = false;
 
 const uint32_t WATCHDOG_MS = 1000;      // stop if no car_command for this long
