@@ -39,3 +39,8 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Secrets: never commit real API keys. Copy .env.example -> .env instead.
+.env
+.env.*
+!.env.example
